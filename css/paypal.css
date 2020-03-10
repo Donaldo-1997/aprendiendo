@@ -1,0 +1,12 @@
+body{
+    background: #373535;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*Esto es view por height, es decir que tomará el tamaño de la pantalla*/
+}
+.content_paypal a{
+    color: var(--green-color);
+}

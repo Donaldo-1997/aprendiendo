@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* ------------------variables------------- */
+:root{
+--green-color:#7ACC2D;
+--white-color:white;
+--black-color: black;
+/* tipografía */
+--normal:12px;
+/* espaciado */
+--space:10px;
+/* box-shadow */
+--box:0 0 1px #9c9999;
+}
+/* -----------------variables-------------- */
+html, body{
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans",sans-serif;
+  color: #373535;
+}
+
+p, label{
+  font-size: var(--normal);
+}
+
+nav{
+  display: flex; /*"flex" hace que los elementos se ubiquen uno a la derecha del otro */
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;  /*Alinea hacia el centro vertical los items*/
+}
+
+nav ul{
+  display: flex;
+
+}
+nav li{
+  padding-left: 20px;
+  list-style: none;
+}
+nav li a{
+  color: black;
+  text-decoration: none;
+}
+nav li a:hover{
+  color: var(--white-color);
+}
+
+/* ----------------main section------------------------------ */
+
+.main_section{
+  padding: 15%;
+  text-align: center;
+}
+/* ---------------------products--------------------------- */
+.products{
+  background-image: url("../imagenes/curve.png"); /*los dos puntos es para que retroceda un lugar hacia afuera y así pueda buscar la imagen */
+  height: 95px;
+  background-size: cover;/*para que la imagen se amolde al espacio disponible*/
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 15%;/*para poder ver la division entre nuestros elementos*/
+  display: flex;
+
+}
+
+.product{
+  padding: 20px;
+  margin-top: -226px;
+}
+.product .content{
+  background-color: var(--white-color);
+  padding: 20px;
+  box-shadow: var(--box);
+  border-radius: 3px;
+
+}
+.img_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: var(--green-color);
+  width: 100%;
+  color: var(--white-color);
+  font-size: var(--normal);
+  padding: var(--space);
+  border: none;
+  cursor: pointer;/*para que el cursor cambie en forma de manita*/
+  border-radius: 2px;
+}
+.main_button:hover{
+  background-color: #5e9e22;
+}
+
+/* ------------------beneficios------------------ */
+
+.beneficios{
+  display: flex;
+  padding: 10%;
+
+}
+.beneficio{
+  padding: 20px;
+  text-align: center;
+}
+.beneficio img{
+  max-height: 100px;
+}
+.text_beneficio{
+  text-align: justify;
+}
+
+/* ----------------mentions--------------------- */
+.mention_title{
+  text-align: center;
+}
+.mentions{
+  display: flex;
+  padding: 5%;
+}
+.mention{
+  padding: var(--space);
+}
+.mention img{
+  width: 100%;
+}
+.content_mention{
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+.mention .text{
+  padding: var(--space);
+}
+
+/* ----------------------footer-------------------------- */
+
+footer{
+  background-color: #313337;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+}
+.contact a{
+  color: var(--green-color);
+}
+/* ----------------------formulario---------------------------- */
+.modulo_pago{
+  background: var(--white-color);
+  box-shadow: var(--box);
+  padding: 20px;
+}
+.data{
+  margin-top: var(--space);
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #313337;
+  box-sizing: border-box;
+}
+.modulo_pago_imagen{
+  max-width: 150px;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+.modulo_pago .main_button{
+  margin-top: 10px;
+}
+
